@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Toaster } from "@/components/ui/sonner"
 import { CartProvider } from "@/components/cart-context"
 import "./globals.css"
@@ -39,6 +40,7 @@ export default function RootLayout({
           <Toaster position="top-center" />
         </CartProvider>
         {process.env.NODE_ENV === "production" && <Analytics />}
+        <SpeedInsights />
       </body>
     </html>
   )
