@@ -15,12 +15,14 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Spinner } from "@/components/ui/spinner"
 import { useCart, type CartItem } from "@/components/cart-context"
+import { useToast } from "@/hooks/use-toast"
 import { getProduct } from "@/lib/products"
 
 export function CheckoutClient() {
   const router = useRouter()
   const params = useSearchParams()
   const cart = useCart()
+  const { toast } = useToast()
 
   // If "Buy Now" provided params, build a single-item cart for this checkout.
   const buyNowItem: CartItem | null = useMemo(() => {
@@ -84,12 +86,28 @@ export function CheckoutClient() {
       if (data.ok) {
         if (!buyNowItem) cart.clear()
         setConfirmation({ orderId: data.orderId })
+        toast({
+          title: "Order placed successfully!",
+          description: `Order ID: ${data.orderId}. We'll confirm by phone within 24 hours.`,
+        })
       } else {
-        alert(data.error ?? "Something went wrong placing your order. Please try again.")
+        const errorMsg = data.error ?? "Something went wrong placing your order. Please try again."
+        toast({
+          title: "Order failed",
+          description: errorMsg,
+          variant: "destructive",
+        })
+        alert(errorMsg)
       }
     } catch (err) {
       console.log("[v0] Order submission failed", err)
-      alert("Something went wrong placing your order. Please try again.")
+      const errorMsg = "Something went wrong placing your order. Please try again."
+      toast({
+        title: "Error",
+        description: errorMsg,
+        variant: "destructive",
+      })
+      alert(errorMsg)
     } finally {
       setSubmitting(false)
     }
