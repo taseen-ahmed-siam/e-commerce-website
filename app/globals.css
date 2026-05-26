@@ -38,6 +38,8 @@
   --sidebar-accent-foreground: oklch(0.18 0.015 60);
   --sidebar-border: oklch(0.88 0.012 75);
   --sidebar-ring: oklch(0.55 0.13 40);
+  /* Custom serif font requested by user */
+  --font-serif-custom: 'Gadget lovers favritue';
 }
 
 .dark {

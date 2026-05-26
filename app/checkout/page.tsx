@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import { CheckoutClient } from "@/components/checkout-client"
 
 export const metadata = {
-  title: "Checkout — Atelier Nori",
-  description: "Complete your order with Atelier Nori.",
+  title: "Checkout — Techzo",
+  description: "Complete your order with Techzo.",
 }
 
 export default function CheckoutPage() {

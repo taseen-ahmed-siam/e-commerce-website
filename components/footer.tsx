@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 py-12 lg:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
-            <div className="font-serif text-xl mb-4">Atelier Nori</div>
+            <div className="font-serif text-xl mb-4">Techzo</div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Quietly crafted ceramics, textiles and lighting for considered interiors.
             </p>
@@ -81,7 +81,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Atelier Nori. All rights reserved.
+          © {new Date().getFullYear()} Techzo. All rights reserved.
         </div>
       </div>
     </footer>

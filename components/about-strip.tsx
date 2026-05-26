@@ -16,7 +16,7 @@ export function AboutStrip() {
         >
           <Image
             src="/images/lifestyle-1.jpg"
-            alt="Atelier Nori studio"
+            alt="Techzo studio"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -34,7 +34,7 @@ export function AboutStrip() {
             A small studio with a slow, considered approach.
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-4 text-pretty">
-            Atelier Nori was founded on a simple belief — that the objects we live with every day deserve
+            Techzo was founded on a simple belief — that the objects we live with every day deserve
             the same care as the rooms we build around them. We work with a tight roster of independent
             makers in Portugal, Denmark and Japan to produce small batches of quietly extraordinary
             things.

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = getProduct(slug)
   if (!product) return {}
   return {
-    title: `${product.name} — Atelier Nori`,
+    title: `${product.name} — Techzo`,
     description: product.description,
   }
 }

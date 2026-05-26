@@ -15,14 +15,14 @@ export function Hero() {
     >
       <Image
         src="/images/hero.jpg"
-        alt="Atelier Nori"
+        alt="Techzo"
         fill
         priority
         className="object-cover"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-      <div className="absolute inset-0 flex items-end justify-center pb-12 md:pb-20">
+      <div className="absolute inset-0 flex items-center md:items-end justify-center pb-40 md:pb-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

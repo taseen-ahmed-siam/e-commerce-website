@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Inter, Instrument_Serif } from "next/font/google"
+import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Toaster } from "@/components/ui/sonner"
 import { CartProvider } from "@/components/cart-context"
@@ -11,21 +11,16 @@ const inter = Inter({
   display: "swap",
 })
 
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-serif-custom",
-  display: "swap",
-})
+// Note: using a custom serif font via CSS variable `--font-serif-custom`
+// The font face should be provided in CSS or via a hosted font.
 
 export const metadata: Metadata = {
-  title: "Atelier Nori — Quietly crafted home objects",
+  title: "Techzo — Quietly crafted home objects",
   description:
-    "Atelier Nori is a premium home goods studio creating quietly crafted ceramics, lighting and textiles for considered interiors.",
+    "Techzo is a premium home goods studio creating quietly crafted ceramics, lighting and textiles for considered interiors.",
   generator: "v0.app",
   openGraph: {
-    title: "Atelier Nori",
+    title: "Techzo",
     description: "Quietly crafted home objects.",
     type: "website",
   },
@@ -37,11 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${instrumentSerif.variable} bg-background`}
-      suppressHydrationWarning
-    >
+      <html lang="en" className={`${inter.variable} bg-background`} suppressHydrationWarning>
       <body className="font-sans antialiased" suppressHydrationWarning>
         <CartProvider>
           {children}
