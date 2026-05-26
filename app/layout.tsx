@@ -38,7 +38,7 @@ export default function RootLayout({
           {children}
           <Toaster position="top-center" />
         </CartProvider>
-        {process.env.NODE_ENV === "production" && <Analytics />}
+        <Analytics />
       </body>
     </html>
   )
