@@ -14,14 +14,14 @@ export function Hero() {
       className="relative h-[70vh] md:h-[80vh] bg-card overflow-hidden"
     >
       <Image
-        src="/images/hero.jpg"
-        alt="Techzo"
+        src="/images/hero.png"
+        alt="Techzo Gaming Gadgets"
         fill
         priority
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
       <div className="absolute inset-0 flex items-center md:items-end justify-center pb-40 md:pb-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,13 +30,13 @@ export function Hero() {
           className="text-center px-4 text-balance"
         >
           <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-foreground mb-4 md:mb-6">
-            Quietly crafted.
+            Next Level Gaming.
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-foreground/80 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed">
-            Home objects designed for quiet permanence.
+            Premium gaming gadgets and tech accessories crafted for performance and style.
           </p>
           <Button asChild size="lg" className="text-base px-8">
-            <Link href="/#best-sellers">Explore the Studio</Link>
+            <Link href="/#best-sellers">Shop Gaming Gear</Link>
           </Button>
         </motion.div>
       </div>
