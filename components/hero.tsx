@@ -21,7 +21,7 @@ export function Hero() {
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent dark:from-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent dark:from-black/70" />
       <div className="absolute inset-0 flex items-center md:items-end justify-center pb-40 md:pb-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,10 +29,10 @@ export function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-center px-4 text-balance"
         >
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-foreground dark:text-white mb-4 md:mb-6">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 md:mb-6">
             Next Level Gaming.
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-foreground/80 dark:text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed">
             Premium gaming gadgets and tech accessories crafted for performance and style.
           </p>
           <Button asChild size="lg" className="text-base px-8">
