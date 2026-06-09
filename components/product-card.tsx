@@ -38,14 +38,14 @@ export function ProductCard({ product, index = 0 }: Props) {
             </Badge>
           )}
         </div>
-        <div>
+        <div className="text-center">
           <div className="text-xs text-muted-foreground uppercase tracking-wider mb-1">
             {product.category}
           </div>
           <h3 className="font-medium leading-tight group-hover:text-accent transition-colors mb-2">
             {product.name}
           </h3>
-          <div className="flex items-baseline gap-2">
+          <div className="flex items-center justify-center gap-2">
             <span className="font-serif text-lg">${product.price}</span>
             {product.compareAtPrice && (
               <span className="text-sm text-muted-foreground line-through">

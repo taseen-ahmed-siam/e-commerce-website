@@ -27,7 +27,7 @@ export function AboutStrip() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="order-1 md:order-2"
+          className="order-1 md:order-2 text-center"
         >
           <div className="text-xs uppercase tracking-[0.2em] text-accent mb-4">Premium Collection</div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-balance leading-tight mb-6">

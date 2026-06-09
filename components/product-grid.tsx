@@ -12,7 +12,7 @@ type Props = {
 export function ProductGrid({ id, eyebrow, title, description, products }: Props) {
   return (
     <section id={id} className="container mx-auto px-4 sm:px-6 py-16 lg:py-24">
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 gap-4">
+      <div className="flex flex-col items-center text-center mb-10 gap-4">
         <div className="max-w-2xl">
           {eyebrow && (
             <div className="text-xs uppercase tracking-[0.2em] text-accent mb-2">{eyebrow}</div>

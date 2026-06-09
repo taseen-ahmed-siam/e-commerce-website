@@ -5,11 +5,11 @@ export function Footer() {
   return (
     <footer className="bg-card border-t border-border mt-24">
       <div className="container mx-auto px-4 sm:px-6 py-12 lg:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center">
           <div>
             <div className="font-serif text-xl mb-4">Techzo</div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Quietly crafted ceramics, textiles and lighting for considered interiors.
+              Premium gaming gadgets and tech accessories for competitive gamers.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-medium mb-3 text-sm uppercase tracking-wide">Follow</h3>
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center">
               <a
                 href="https://instagram.com"
                 target="_blank"
