@@ -11,7 +11,7 @@ export function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="relative h-[70vh] md:h-[80vh] bg-card overflow-hidden"
+      className="relative h-[50vh] sm:h-[55vh] md:h-[75vh] lg:h-[80vh] bg-card overflow-hidden"
     >
       <Image
         src="/images/hero.png"
@@ -22,7 +22,7 @@ export function Hero() {
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent dark:from-black/70" />
-      <div className="absolute inset-0 flex items-center md:items-end justify-center pb-40 md:pb-20">
+      <div className="absolute inset-0 flex items-center md:items-end justify-center pb-8 sm:pb-16 md:pb-20 lg:pb-40">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
