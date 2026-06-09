@@ -4,81 +4,82 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Vibrant, colorful e-commerce palette: Clean white background with bold, energetic accents */
-  --background: oklch(0.98 0.002 0);
+  /* Tech Gaming Theme - Light mode: Still light for accessibility but softer */
+  --background: oklch(0.96 0.002 0);
   --foreground: oklch(0.15 0.01 250);
-  --card: oklch(0.99 0.002 0);
+  --card: oklch(0.98 0.002 0);
   --card-foreground: oklch(0.15 0.01 250);
-  --popover: oklch(0.99 0.002 0);
+  --popover: oklch(0.98 0.002 0);
   --popover-foreground: oklch(0.15 0.01 250);
   --primary: oklch(0.15 0.01 250);
-  --primary-foreground: oklch(0.98 0.002 0);
-  --secondary: oklch(0.95 0.008 280);
+  --primary-foreground: oklch(0.96 0.002 0);
+  --secondary: oklch(0.94 0.008 280);
   --secondary-foreground: oklch(0.15 0.01 250);
-  --muted: oklch(0.92 0.008 0);
+  --muted: oklch(0.90 0.008 0);
   --muted-foreground: oklch(0.5 0.008 250);
-  /* Vibrant gradient accent: Electric purple to magenta */
-  --accent: oklch(0.58 0.25 290);
-  --accent-foreground: oklch(0.98 0.002 0);
+  /* Neon Purple - Primary accent */
+  --accent: oklch(0.62 0.28 290);
+  --accent-foreground: oklch(0.12 0.008 250);
   --destructive: oklch(0.55 0.25 25);
-  --destructive-foreground: oklch(0.98 0.002 0);
-  --border: oklch(0.93 0.006 0);
-  --input: oklch(0.93 0.006 0);
-  --ring: oklch(0.58 0.25 290);
-  /* Colorful chart palette for vibrant data viz */
-  --chart-1: oklch(0.58 0.25 290);
-  --chart-2: oklch(0.65 0.25 25);
-  --chart-3: oklch(0.6 0.22 120);
-  --chart-4: oklch(0.62 0.25 45);
-  --chart-5: oklch(0.55 0.23 200);
+  --destructive-foreground: oklch(0.96 0.002 0);
+  --border: oklch(0.91 0.006 0);
+  --input: oklch(0.91 0.006 0);
+  --ring: oklch(0.62 0.28 290);
+  /* Neon chart colors: Purple, Cyan, Lime, Pink, Orange */
+  --chart-1: oklch(0.62 0.28 290);
+  --chart-2: oklch(0.65 0.27 200);
+  --chart-3: oklch(0.70 0.25 130);
+  --chart-4: oklch(0.60 0.26 320);
+  --chart-5: oklch(0.65 0.26 50);
   --radius: 0.25rem;
-  --sidebar: oklch(0.98 0.002 0);
+  --sidebar: oklch(0.96 0.002 0);
   --sidebar-foreground: oklch(0.15 0.01 250);
   --sidebar-primary: oklch(0.15 0.01 250);
-  --sidebar-primary-foreground: oklch(0.98 0.002 0);
-  --sidebar-accent: oklch(0.58 0.25 290);
-  --sidebar-accent-foreground: oklch(0.98 0.002 0);
-  --sidebar-border: oklch(0.93 0.006 0);
-  --sidebar-ring: oklch(0.58 0.25 290);
+  --sidebar-primary-foreground: oklch(0.96 0.002 0);
+  --sidebar-accent: oklch(0.62 0.28 290);
+  --sidebar-accent-foreground: oklch(0.12 0.008 250);
+  --sidebar-border: oklch(0.91 0.006 0);
+  --sidebar-ring: oklch(0.62 0.28 290);
   /* Custom serif font requested by user */
   --font-serif-custom: 'Gadget lovers favritue';
 }
 
 .dark {
-  --background: oklch(0.12 0.008 250);
-  --foreground: oklch(0.96 0.008 0);
-  --card: oklch(0.18 0.008 250);
-  --card-foreground: oklch(0.96 0.008 0);
-  --popover: oklch(0.18 0.008 250);
-  --popover-foreground: oklch(0.96 0.008 0);
-  --primary: oklch(0.96 0.008 0);
-  --primary-foreground: oklch(0.12 0.008 250);
-  --secondary: oklch(0.25 0.008 250);
-  --secondary-foreground: oklch(0.96 0.008 0);
-  --muted: oklch(0.25 0.008 250);
-  --muted-foreground: oklch(0.72 0.008 0);
-  /* Vibrant accent even in dark mode */
-  --accent: oklch(0.68 0.25 290);
-  --accent-foreground: oklch(0.12 0.008 250);
-  --destructive: oklch(0.65 0.25 25);
-  --destructive-foreground: oklch(0.12 0.008 250);
-  --border: oklch(0.28 0.008 250);
-  --input: oklch(0.28 0.008 250);
-  --ring: oklch(0.68 0.25 290);
-  /* Vibrant chart colors for dark mode */
-  --chart-1: oklch(0.68 0.25 290);
-  --chart-2: oklch(0.72 0.25 25);
-  --chart-3: oklch(0.7 0.22 120);
-  --chart-4: oklch(0.74 0.25 45);
-  --chart-5: oklch(0.65 0.23 200);
-  --sidebar: oklch(0.12 0.008 250);
-  --sidebar-foreground: oklch(0.96 0.008 0);
-  --sidebar-primary: oklch(0.96 0.008 0);
-  --sidebar-primary-foreground: oklch(0.12 0.008 250);
-  --sidebar-accent: oklch(0.68 0.25 290);
-  --sidebar-accent-foreground: oklch(0.12 0.008 250);
-  --sidebar-border: oklch(0.28 0.008 250);
-  --sidebar-ring: oklch(0.68 0.25 290);
+  /* Dark Tech Gaming Theme - Dark navy background with neon accents */
+  --background: oklch(0.10 0.01 250);
+  --foreground: oklch(0.98 0.008 0);
+  --card: oklch(0.14 0.008 250);
+  --card-foreground: oklch(0.98 0.008 0);
+  --popover: oklch(0.14 0.008 250);
+  --popover-foreground: oklch(0.98 0.008 0);
+  --primary: oklch(0.98 0.008 0);
+  --primary-foreground: oklch(0.10 0.01 250);
+  --secondary: oklch(0.22 0.008 250);
+  --secondary-foreground: oklch(0.98 0.008 0);
+  --muted: oklch(0.22 0.008 250);
+  --muted-foreground: oklch(0.70 0.008 0);
+  /* Neon Purple - Bright and vibrant */
+  --accent: oklch(0.70 0.30 290);
+  --accent-foreground: oklch(0.10 0.01 250);
+  --destructive: oklch(0.68 0.28 25);
+  --destructive-foreground: oklch(0.10 0.01 250);
+  --border: oklch(0.24 0.008 250);
+  --input: oklch(0.24 0.008 250);
+  --ring: oklch(0.70 0.30 290);
+  /* Neon chart colors for dark mode: Bright and intense */
+  --chart-1: oklch(0.70 0.30 290);
+  --chart-2: oklch(0.72 0.28 200);
+  --chart-3: oklch(0.78 0.27 130);
+  --chart-4: oklch(0.68 0.29 320);
+  --chart-5: oklch(0.72 0.28 50);
+  --sidebar: oklch(0.10 0.01 250);
+  --sidebar-foreground: oklch(0.98 0.008 0);
+  --sidebar-primary: oklch(0.98 0.008 0);
+  --sidebar-primary-foreground: oklch(0.10 0.01 250);
+  --sidebar-accent: oklch(0.70 0.30 290);
+  --sidebar-accent-foreground: oklch(0.10 0.01 250);
+  --sidebar-border: oklch(0.24 0.008 250);
+  --sidebar-ring: oklch(0.70 0.30 290);
 }
 
 @theme inline {
