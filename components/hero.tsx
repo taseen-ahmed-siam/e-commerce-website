@@ -29,11 +29,10 @@ export function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-center px-4 text-balance"
         >
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 md:mb-6">
-            Next Level Gaming.
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 md:mb-6 mt-9">
+            Buy anything with <span className="text-blue-500">Free delivery</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed">
-            Premium gaming gadgets and tech accessories crafted for performance and style.
           </p>
           <Button asChild size="lg" className="text-base px-8">
             <Link href="/#best-sellers">Shop Gaming Gear</Link>
