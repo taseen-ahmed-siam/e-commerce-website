@@ -15,8 +15,8 @@ export function AboutStrip() {
           className="relative aspect-[4/5] rounded-sm overflow-hidden bg-card order-2 md:order-1"
         >
           <Image
-            src="/images/lifestyle-1.jpg"
-            alt="Techzo studio"
+            src="/images/lifestyle-1.png"
+            alt="Gaming setup"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -27,20 +27,17 @@ export function AboutStrip() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="order-1 md:order-2"
+          className="order-1 md:order-2 text-center"
         >
-          <div className="text-xs uppercase tracking-[0.2em] text-accent mb-4">From the studio</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-accent mb-4">Premium Collection</div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-balance leading-tight mb-6">
-            A small studio with a slow, considered approach.
+            High-Performance Gaming & Tech Gadgets.
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-4 text-pretty">
-            Techzo was founded on a simple belief — that the objects we live with every day deserve
-            the same care as the rooms we build around them. We work with a tight roster of independent
-            makers in Portugal, Denmark and Japan to produce small batches of quietly extraordinary
-            things.
+            Techzo curates the finest gaming peripherals and tech gadgets from leading manufacturers worldwide. Each product is hand-selected for superior performance, build quality, and competitive advantage.
           </p>
           <p className="text-muted-foreground leading-relaxed text-pretty">
-            Every piece is shipped in recyclable packaging and accompanied by a hand-signed note of care.
+            From esports-grade peripherals to premium lifestyle tech, every item in our collection is tested and trusted by competitive gamers and tech enthusiasts globally.
           </p>
         </motion.div>
       </div>

@@ -11,7 +11,7 @@ type Props = {
 export function SimilarProducts({ products }: Props) {
   return (
     <section className="border-t border-border pt-12 lg:pt-16">
-      <div className="flex items-end justify-between mb-8">
+      <div className="flex flex-col items-center text-center mb-8">
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-accent mb-2">You may also like</div>
           <h2 className="font-serif text-3xl md:text-4xl">Pieces that pair well</h2>

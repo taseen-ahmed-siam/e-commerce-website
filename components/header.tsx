@@ -1,9 +1,10 @@
 "use client"
 
 import Link from "next/link"
-import { ShoppingBag } from "lucide-react"
+import { ShoppingBag, Moon, Sun } from "lucide-react"
 import { useCart } from "@/components/cart-context"
 import { LiveSearch } from "@/components/live-search"
+import { useEffect, useState } from "react"
 import {
   Sheet,
   SheetContent,
@@ -17,6 +18,27 @@ import Image from "next/image"
 
 export function Header() {
   const { items, count, subtotal, remove } = useCart()
+  const [isDark, setIsDark] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+    const isDarkMode = document.documentElement.classList.contains("dark")
+    setIsDark(isDarkMode)
+  }, [])
+
+  const toggleDarkMode = () => {
+    const html = document.documentElement
+    if (isDark) {
+      html.classList.remove("dark")
+      localStorage.setItem("theme", "light")
+      setIsDark(false)
+    } else {
+      html.classList.add("dark")
+      localStorage.setItem("theme", "dark")
+      setIsDark(true)
+    }
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -30,6 +52,15 @@ export function Header() {
             <div className="flex-shrink-0">
               <LiveSearch />
             </div>
+            {mounted && (
+              <button
+                onClick={toggleDarkMode}
+                className="p-1.5 hover:text-accent transition-colors"
+                aria-label="Toggle dark mode"
+              >
+                {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
+            )}
             <Sheet>
               <SheetTrigger asChild>
                 <button className="p-1.5 hover:text-accent transition-colors relative" aria-label="Cart">
@@ -126,6 +157,16 @@ export function Header() {
 
           <div className="flex items-center gap-3 sm:gap-4">
             <LiveSearch />
+
+            {mounted && (
+              <button
+                onClick={toggleDarkMode}
+                className="p-1.5 hover:text-accent transition-colors"
+                aria-label="Toggle dark mode"
+              >
+                {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
+            )}
 
             <Sheet>
               <SheetTrigger asChild>

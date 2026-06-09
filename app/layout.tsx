@@ -33,6 +33,18 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en" className={`${inter.variable} bg-background`} suppressHydrationWarning>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const theme = localStorage.getItem('theme');
+              if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+              }
+            })();
+          `,
+        }}
+      />
       <body className="font-sans antialiased" suppressHydrationWarning>
         <CartProvider>
           {children}

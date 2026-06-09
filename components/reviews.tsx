@@ -12,12 +12,12 @@ export function Reviews({ reviews }: Props) {
   const avg = reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length
   return (
     <section className="border-t border-border pt-12 lg:pt-16">
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+      <div className="flex flex-col items-center text-center gap-4 mb-8">
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-accent mb-2">Customer Reviews</div>
           <h2 className="font-serif text-3xl md:text-4xl">What our customers say</h2>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col items-center gap-3">
           <StarRating rating={Math.round(avg)} size="md" />
           <span className="text-sm text-muted-foreground">
             {avg.toFixed(1)} average · {reviews.length} reviews

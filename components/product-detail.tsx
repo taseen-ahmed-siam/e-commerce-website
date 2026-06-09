@@ -70,7 +70,7 @@ export function ProductDetail({ product }: Props) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="space-y-6 lg:sticky lg:top-24 lg:self-start"
+        className="space-y-6 lg:sticky lg:top-24 lg:self-start text-center"
       >
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-accent mb-2">{product.category}</div>
